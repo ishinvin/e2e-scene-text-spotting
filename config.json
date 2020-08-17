@@ -1,0 +1,32 @@
+{
+    "name": "E2E-STS",
+    "cuda": true,
+    "gpus": [0],
+    "data_loader": {
+        "data_dir": "/home/ishin/Development/east-mobilenet/datasets",
+        "input_size": 512,
+        "batch_size": 4,
+        "shuffle": true,
+        "workers": 5
+    },
+    "validation": {
+        "skip_lt_epoch": 0,
+        "validation_split": 0.1,
+        "shuffle": true
+    },
+    "optimizer_type": "Adam",
+    "optimizer": {
+        "lr": 0.0001,
+        "weight_decay": 1e-5
+    },
+    "trainer": {
+        "epochs": 100,
+        "save_dir": "saved/",
+        "save_freq": 3,
+        "verbosity": 2,
+        "print_step": 25,
+        "monitor": "hmean",
+        "monitor_mode": "max"
+    },
+    "debug": false
+}
