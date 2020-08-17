@@ -3,7 +3,7 @@
     "cuda": true,
     "gpus": [0],
     "data_loader": {
-        "data_dir": "/home/ishin/Development/east-mobilenet/datasets",
+        "data_dir": "datasets",
         "input_size": 512,
         "batch_size": 4,
         "shuffle": true,
