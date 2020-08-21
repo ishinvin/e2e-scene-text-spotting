@@ -72,6 +72,8 @@ Note: check the "config.json" file, which is used to adjust the training configu
 
 Experiment on GEFORCE RTX 2070
 
+## Examples
+![example](example/e2e-sts.png)
 
 
 ## Acknowledgments
